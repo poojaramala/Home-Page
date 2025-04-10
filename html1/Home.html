@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<di style="background-color:beige">
+   <header>
+    <nav>
+        <h1 style="color:perano; font-size: 30px;">Mom Pharmacy</h1>
+        <ul class="navbar">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="home">
+            <div class="bd">
+                
+
+            <h1 style="color: white;">Your Health, Delivered in 10 Minutes</h1> 
+            
+            <h2 style="color:burlywood;">Fast, reliable medicine delivery right to your doorstep. Professional care with a mother's touch.</h2>
+            <div class="container" id="main-content">
+            
+                <button class="open-btn" onclick="openCard()">Upload Prescription</button>
+            </div>
+            
+            <div class="card-overlay" id="cardOverlay" style="display: none;">
+                <div class="card">
+                <button class="close-btn" onclick="closeCard()">×</button>
+                <h2>Pharmacy Form</h2>
+                <form id="infoForm">
+                    <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">-- Select --</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}">
+                    </div>
+                    <!-- <div>
+                        <h3>contact Us</h3>
+                        <button class="whatsapp-btn" onclick="openWhatsApp()">Open WhatsApp</button>
+                    </div> -->
+                    <form action="/action_page.php">
+                        <h3>Upload Prescription</h3>
+                        <input type="file" id="myFile" name="filename">
+                        <!-- <input type="submit"> -->
+                        
+                    </form>
+                    <!-- <button class="whatsapp-btn" onclick="openWhatsApp()">Open WhatsApp</button> -->
+                    <!-- <button type="submit" class="submit-btn" onclick="openWhatsApp()">Submit</button> -->
+                    <button type="submit" class="submit-btn" onclick="window.location.href='https://wa.me/917671812449';">
+                        Submit
+                    </button>
+                    
+                </form>
+                </div>
+            </div>
+                
+                </div>
+            </div>
+        </div>
+   
+    
+    <script src="home.js"></script>
+    
+</body>
+</html>
